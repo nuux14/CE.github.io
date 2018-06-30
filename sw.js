@@ -7,10 +7,17 @@ self.addEventListener('install', event=> {
     caches.open(staticCacheName).then(cache=> {
       return cache.addAll([
         './',
-        'index.html',
+        '/index.html',
         'js/app.js',
         'imgs/',
-        'css/style.css'
+        'css/style.css',
+        'index.html',
+        'js/app.js',
+        'imgs/icon.png',
+        'imgs/icon-192.png',
+        'imgs/icon-512.png',
+        'css/style.css',
+        'manifest.json'
          ]);
     })
   );
